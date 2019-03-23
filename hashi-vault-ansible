@@ -1,0 +1,47 @@
+# https://docs.ansible.com/ansible/latest/plugins/lookup/hashi_vault.html
+
+Parameters
+Parameter	Choices/Defaults	Configuration	Comments
+auth_method
+-
+authentication method used
+cacert
+-
+path to certificate to use for authentication
+mount_point
+-
+Default:
+ldap
+vault mount point, only required if you have a custom mount point
+password
+-
+authentication password
+role_id
+-
+env:VAULT_ROLE_ID
+Role id for a vault AppRole auth
+secret
+- / required
+query you are making
+secret_id
+-
+env:VAULT_SECRET_ID
+Secret id for a vault AppRole auth
+token
+-
+env:VAULT_TOKEN
+vault token
+url
+-
+Default:
+http://127.0.0.1:8200
+env:VAULT_ADDR
+url to vault service
+username
+-
+authentication user name
+validate_certs
+boolean
+Default:
+yes
+controls verification and validation of SSL certificates, mostly you only want to turn off with self signed ones.
